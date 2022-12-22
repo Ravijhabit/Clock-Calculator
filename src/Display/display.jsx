@@ -1,9 +1,15 @@
-import react from 'react';
+import React from 'react';
+
 import css from './display.module.css';
+import Hms from '../Left/hms/hms';
+import Days from '../Left/Days/days';
 
 const display = ()=>{
     return (
-        <h1>Display</h1>
+        <div className={css.container}>
+            <Days/>
+            <Hms/>
+        </div>
     )
 }
 export default display;

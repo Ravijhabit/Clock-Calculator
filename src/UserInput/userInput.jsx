@@ -1,9 +1,11 @@
-import react from 'react';
+import React from 'react';
 import css from './userInput.module.css';
 
 const userInput = ()=>{
     return (
-        <h1>userInput</h1>
+        <div className={css.container}>
+        
+        </div>
     )
 }
 export default userInput;

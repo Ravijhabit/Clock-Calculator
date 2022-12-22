@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height:150px;
+    justify-content: space-between;
+}
+.unit {
+    display:flex;
+    flex-direction:row;
+    width:150px;
+    height:105px;
+    justify-content: space-between;
+}
+.container h3{
+    text-align: center;
+    color:#ffffff;
+    font-size: 24px;
+    font-family: 'Inter',sans-serif;
+}

@@ -1,16 +1,15 @@
-import react from 'react';
+import React from 'react';
 
-import Display from './Display/display';
 import Footer from './Footer/footer';
 import Header from './Header/header';
-import UserInput from './UserInput/userInput';
+import {Interact} from './Interact/interact';
+import css from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className={css.App}>
       <Header/>
-      <Display/>
-      <UserInput/>
+      <Interact/>
       <Footer/>
     </div>
   )

@@ -1,0 +1,18 @@
+
+.heading{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-family:'monoton', cursive;
+    font-weight: 100;
+}
+
+.heading hr{
+    width:450px;
+    background-color: rgba(202, 202, 202, 0.966);
+    height:3px;
+    margin: 0 auto;
+}

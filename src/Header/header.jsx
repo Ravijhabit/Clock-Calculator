@@ -1,9 +1,12 @@
-import react from 'react';
+import React from 'react';
 import css from './header.module.css';
 
 const header = ()=>{
     return (
-        <h1>Header</h1>
+        <div className={css.heading}>
+            <h1>Clock Calculator</h1>
+            <hr/>
+        </div>
     )
 }
 export default header;

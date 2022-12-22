@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Nunito:wght@200&family=Inter:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.App{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #E0E0F6;
+}
