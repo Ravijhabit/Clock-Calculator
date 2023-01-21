@@ -3,4 +3,18 @@
     text-align: center;
     font-size:1.5rem;
     font-family: 'Nunito', sans-serif;
+    align-items: center;;
+    display:flex;
+    justify-content: space-evenly;
+}
+.foot img{
+    width: 30px;
+    height:30px;
+}
+.foot a{
+    width:40px;
+    margin:10px;
+    text-align: center;
+    padding:10px 5px 0 5px;
+    box-sizing: border-box;
 }

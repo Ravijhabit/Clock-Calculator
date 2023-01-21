@@ -14,6 +14,8 @@ const userInput = ()=>{
     // const onSubBtnClick = ()  =>{
     //     //remove last Element
     // };
+    
+    //disabled
 
     useEffect(() => {
         bottomRef.current?.scrollIntoView({behavior: 'smooth'});
