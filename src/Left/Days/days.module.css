@@ -1,4 +1,18 @@
 .container{
     display: flex;
+    flex-direction:column;
     justify-content: center;
+}
+.holder{
+    align-self: center;
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container h3{
+    text-align: center;
+    color:#ffffff;
+    font-size: 36px;
+    padding:16px;
+    font-family: 'Inter',sans-serif;
 }

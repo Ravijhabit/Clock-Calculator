@@ -8,7 +8,7 @@ const initialValues = {
     seconds:"",
 };
 
-const input = ()=>{
+const input = ({handlerOption})=>{
     const [values,setValues] = useState(initialValues);
 
     const handleInputChange = (event) => {
@@ -20,6 +20,7 @@ const input = ()=>{
     };
     const handleSubmit = (event) =>{
         event.preventDefault();
+        handlerOption(values);
         alert(`Time has been noted ${values.hours} hrs ${values.minutes} min and ${values.seconds} sec.`);
     }
 

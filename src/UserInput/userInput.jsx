@@ -2,25 +2,30 @@ import React, {useEffect, useRef, useState} from 'react';
 import css from './userInput.module.css';
 
 import Input from '../Input/input';
-const userInput = ()=>{
+const userInput = ({handleChange,totalTime})=>{
     const bottomRef = useRef(null);
-
-    const [inputArr,setInputArr]=useState([<Input key='0'/>]);
-    
+    const [inputArr,setInputArr]=useState([<Input handlerOption={handlerOption} key='0'/>]);
     const onAddBtnClick = () =>{
         setInputArr(inputArr.concat(<Input key={inputArr.length}/>));
     };
-
+    // changeTime([4,1,5,1]);
     // const onSubBtnClick = ()  =>{
     //     //remove last Element
     // };
     
     //disabled
+    function handlerOption(add){
+        totalTime[1]+=parseInt(add.hours);
+        totalTime[2]+=parseInt(add.minutes);
+        totalTime[3]+=parseInt(add.seconds);
+        handleChange(totalTime);
+    }
 
     useEffect(() => {
+
         bottomRef.current?.scrollIntoView({behavior: 'smooth'});
       }, [inputArr]);
-
+    
     return (
         <div className={css.container}>
             <div className={css.helper}>
